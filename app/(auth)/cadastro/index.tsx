@@ -1,6 +1,7 @@
+import CadastroForm from "@/app/components/CadastroForm";
+import { Card } from "@/app/components/ui/card";
 import React, { useState } from "react";
-import CadastroForm from "@/src/components/CadastroForm";
-import { Card } from "@/src/components/ui/card";
+
 import {
   View,
   StyleSheet,

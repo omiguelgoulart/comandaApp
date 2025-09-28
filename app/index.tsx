@@ -1,6 +1,6 @@
 import { Text, View } from "react-native";
-import { Button } from "../src/components/ui/button";
 import { Link } from "expo-router";
+import { Button } from "./components/ui/button";
 
 export default function Index() {
   return (

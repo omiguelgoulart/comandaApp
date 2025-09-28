@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Button } from "@/src/components/ui/button";        // 👈 ajuste de caminho
-import { Card } from "@/src/components/ui/card";
-import { Input } from "@/src/components/ui/input";
-import { Label } from "@/src/components/ui/label";
+import { Button } from "@/app/components/ui/button";        // 👈 ajuste de caminho
+import { Card } from "@/app/components/ui/card";
+import { Input } from "@/app/components/ui/input";
+import { Label } from "@/app/components/ui/label";
 import { Link, router } from "expo-router";
 
 import {
