@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { useLocalSearchParams } from "expo-router";
 import { Card } from "@/components/ui/card";
-import TabelaScreen from "../../_components/tabela";
+import { COLORS } from "@/app/lib/status";
 
 type Params = {
   id?: string | string[];
@@ -20,7 +20,7 @@ export default function DetailsScreen() {
   const description = toStr(params.description);
 
   return (
-    <View style={styles.container}>
+    <View style={styles.safe}>
       <Card style={{ width: "100%", maxWidth: 560 }}>
         <Card.Header>
           <Card.Title>Detalhes da Comanda {id ? `#${id}` : ""}</Card.Title>
@@ -37,22 +37,17 @@ export default function DetailsScreen() {
           <Text style={styles.value}>{description || "—"}</Text>
         </Card.Content>
       </Card>
-
-
-      <TabelaScreen />
     </View>
-    
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#2f343eff",
-    justifyContent: "center",
+  safe: { 
+    flex: 1, 
+    backgroundColor: COLORS.bg, 
+    gap: 8, 
     alignItems: "center",
-    padding: 16,
-  },
+    padding: 16,},
   label: {
     color: "#A1A1AA",
     fontSize: 13,

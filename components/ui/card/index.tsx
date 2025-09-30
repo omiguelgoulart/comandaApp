@@ -54,7 +54,7 @@ export const Card = Object.assign(CardRoot, {
 // 🎨 Estilos
 const styles = StyleSheet.create({
   base: {
-    backgroundColor: "#111214",
+    backgroundColor: "#1F2126",
     borderRadius: 12,
     padding: 16,
     shadowColor: "#000",

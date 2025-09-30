@@ -14,7 +14,7 @@ const tokens = {
   spacing: { sm: 10, md: 14, lg: 18 },
   font: { sm: 14, md: 16, lg: 18 },
   colors: {
-    primary: "#6E56CF", // Roxo (exemplo)
+    primary: "#2E5951", // verde
     primaryText: "#FFFFFF",
     border: "#2A2A31",
     bg: "#151518",

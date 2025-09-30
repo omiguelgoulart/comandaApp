@@ -1,6 +1,6 @@
 import { Pedido } from "./pedidoItf"
 
-export interface Comanda {
+export interface ComandaItf {
   id: number
   numero: number
   data: string // ou Date se você já converter

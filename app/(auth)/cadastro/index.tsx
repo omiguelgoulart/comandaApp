@@ -1,16 +1,16 @@
-import CadastroForm from "@/app/components/CadastroForm";
-import { Card } from "@/app/components/ui/card";
+import CadastroForm from "../../../components/CadastroForm";
+import { Card } from "../../../components/ui/card";
 import React, { useState } from "react";
 
 import {
-  View,
-  StyleSheet,
-  SafeAreaView,
   KeyboardAvoidingView,
-  Platform,
-  ScrollView,
-  useWindowDimensions,
   LayoutChangeEvent,
+  Platform,
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
+  useWindowDimensions,
+  View,
 } from "react-native";
 
 export default function PageCadastro() {

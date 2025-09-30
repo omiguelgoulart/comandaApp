@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { Button } from "@/app/components/ui/button";        // 👈 ajuste de caminho
-import { Card } from "@/app/components/ui/card";
-import { Input } from "@/app/components/ui/input";
-import { Label } from "@/app/components/ui/label";
+import { Button } from "../../../components/ui/button";
+import { Card } from "../../../components/ui/card";
+import { Input } from "../../../components/ui/input";
+import { Label } from "../../../components/ui/label";
 import { Link, router } from "expo-router";
+import React, { useState } from "react";
 
 import {
   KeyboardAvoidingView,
@@ -11,13 +11,13 @@ import {
   SafeAreaView,
   ScrollView,
   StyleSheet,
-  View,
   Text,
+  View,
 } from "react-native";
 
-import { useForm, Controller } from "react-hook-form";
-import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { Controller, useForm } from "react-hook-form";
+import { z } from "zod";
 
 // ✅ Schema de validação
 const schema = z.object({
@@ -142,7 +142,10 @@ export default function PageLogin() {
                 </View>
 
                 <View style={styles.actions}>
-                  <Button isDisabled={isSubmitting} onPress={handleSubmit(onSubmit)}>
+                  <Button
+                    isDisabled={isSubmitting}
+                    onPress={handleSubmit(onSubmit)}
+                  >
                     {isSubmitting ? "Entrando..." : "Entrar"}
                   </Button>
 

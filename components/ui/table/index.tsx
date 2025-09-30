@@ -26,7 +26,7 @@ type TableProps<T> = {
   onRowPress?: (row: T, index: number) => void;
 };
 
-export function Table<T extends Record<string, any>>({
+export default function Table<T extends Record<string, any>>({
   columns,
   data,
   style,

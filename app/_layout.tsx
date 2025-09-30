@@ -33,7 +33,7 @@ export default function RootLayout() {
       }}
     >
       {/* Se não quiser telas fixas, pode deixar só o <Stack /> vazio */}
-      <Stack.Screen name="index" options={{ title: "Início" }} />
+      
     </Stack>
   );
 }
